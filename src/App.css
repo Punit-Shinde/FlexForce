@@ -1,6 +1,6 @@
 body {
   font-family: 'Josefin Sans';
-  background-color: #FFFAFB;
+  background-color: #8e8d8d9a;
 }
 
 * {
@@ -25,13 +25,13 @@ body {
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #FF2625; 
+  background: #000000; 
   border-radius: 8px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #ae1919; 
+  background: #767676; 
 }
 
 
@@ -39,6 +39,10 @@ body {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+}
+
+.navLogo{
+  filter: invert(0.5) contrast(100) brightness(0);
 }
 
 .detail-image {
@@ -53,14 +57,15 @@ body {
   width: 700px;
   height: 900px;
   margin-top: -330px;
-
+border-radius: 0 0 0 50px;
 }
 
 .exercise-card {
   width: 400px;
   height: 445px;
   background: #fff;
-  border-top: 4px solid #FF2625;
+  border-left: 5px solid #252525;
+  border-bottom: 5px solid #252525;
   border-bottom-left-radius: 20px;
   text-decoration: none;
   display: flex;
@@ -84,10 +89,13 @@ body {
 .bodyPart-card:hover {
   transform: scale(1.1, 1.1);
 }
-
+.bodyPartIcon{
+ filter: grayscale(1);
+}
 .search-btn:hover {
-  color: #FF2625 !important;
-  border: 1px solid #FF2625 !important;
+  color: #252525 !important;
+  background-color: #00000068 !important;
+  border: 1px solid #252525 !important;
 }
 
 .exercise-video {
@@ -97,6 +105,10 @@ body {
   width: 387px;
   height: 381px;
   text-decoration: none;
+}
+
+.footerLogo{
+  filter: invert(0.5) contrast(100) brightness(100);
 }
 
 @media screen and (max-width:1200px) {

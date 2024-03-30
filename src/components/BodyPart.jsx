@@ -9,7 +9,7 @@ const BodyPart = ({ item, setBodyPart, bodyPart }) => (
     justifyContent="center"
     className="bodyPart-card"
     sx={{
-      borderTop: bodyPart === item ? "4px solid #FF2625" : "",
+      borderTop: bodyPart === item ? "4px solid #030303" : "",
       background: "#fff",
       borderBottomLeftRadius: "20px",
       width: "270px",
@@ -22,7 +22,7 @@ const BodyPart = ({ item, setBodyPart, bodyPart }) => (
       window.scrollTo({ top: 1800, left: 100, behavior: "smooth" });
     }}
   >
-    <img src={Icon} alt="dumbbell" style={{ width: "40px", height: "40px" }} />
+    <img className="bodyPartIcon" src={Icon} alt="dumbbell" style={{ width: "40px", height: "40px" }} />
     <Typography
       fontSize="24px"
       fontWeight="bold"
